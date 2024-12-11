@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input"
 
 export function Header() {
   return (
-    <header className="w-full py-4 px-4 sm:px-6 lg:px-8 absolute top-0 left-0 z-10">
+    <div className="w-full py-4 px-4 sm:px-6 lg:px-8 top-0 left-0">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <h1 className='text-2xl text-white'>Ai Implementer</h1>
@@ -14,7 +14,7 @@ export function Header() {
         </div>
       </div>
 
-<div className="flex-grow flex-col justify-center mt-40">
+<div className="flex-grow flex-col justify-center mt-40 mb-10">
   <div className="text-center text-gray-100 px-4">
     <h1 className="text-5xl font-bold mb-4">AI Implementer</h1>
     <p className="text-xl max-w-2xl mx-auto">
@@ -36,7 +36,7 @@ export function Header() {
 </div>
 
 
-    </header>
+    </div>
   )
 }
 
