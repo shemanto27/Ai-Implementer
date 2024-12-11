@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
-export function BlogCard({ title, date, publisher, imageUrl, publisherImageUrl }) {
+export function BlogCard({ title, date, publisher, imageUrl, publisherImageUrl,category }) {
   return (
     <Card className="w-full max-w-sm bg-gray-800 text-gray-100">
       <CardHeader className="p-0">
@@ -23,6 +23,7 @@ export function BlogCard({ title, date, publisher, imageUrl, publisherImageUrl }
               <AvatarFallback>{publisher.charAt(0)}</AvatarFallback>
             </Avatar>
             <span className="text-sm text-gray-400">{publisher}</span>
+            <span className='bg-blue-600 rounded-3xl text-sm p-1'>{category}</span>
           </div>
           <span className="text-sm text-gray-400">{date}</span>
         </div>
