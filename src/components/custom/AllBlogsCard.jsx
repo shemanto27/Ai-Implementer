@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 function AllBlogsCard() {
     const blogPosts = [
         {
+          id:1,
           title: "The Future of AI in Business",
           date: "May 15, 2023",
           publisher: "John Doe",
@@ -13,6 +14,7 @@ function AllBlogsCard() {
           category:'ML Project',
         },
         {
+          id:2,
           title: "Machine Learning Trends in 2023",
           date: "May 10, 2023",
           publisher: "Jane Smith",
@@ -21,6 +23,7 @@ function AllBlogsCard() {
           category:'DL Project',
         },
         {
+          id:3,
           title: "How AI is Transforming Healthcare",
           date: "May 5, 2023",
           publisher: "Alex Johnson",
